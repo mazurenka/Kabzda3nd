@@ -1,25 +1,45 @@
 import React from 'react';
 import './App.css';
 
+function Hello() {
+    alert('Hello')
+}
+
+Hello()
+
 function App() {
     debugger
     return (
         <div>
-            This is App component
+            <AppTitle/>
+            <Rating/>
+            <Accordion/>
         </div>
     );
+}
+
+function AppTitle() {
+    return (
+        <>This is App component</>
+    )
 }
 
 function Rating() {
     debugger
     return (
         <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
+    )
+}
+
+function Star() {
+    return (
+        <div>star</div>
     )
 }
 
