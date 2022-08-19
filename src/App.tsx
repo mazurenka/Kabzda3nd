@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
+    debugger
     return (
         <div>
             This is App component
@@ -10,6 +11,7 @@ function App() {
 }
 
 function Rating() {
+    debugger
     return (
         <div>
             <div>star</div>
@@ -22,6 +24,7 @@ function Rating() {
 }
 
 function Accordion() {
+    debugger
     return (
         <div>
             <h3>Menu</h3>
