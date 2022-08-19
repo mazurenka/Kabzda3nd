@@ -8,12 +8,14 @@ function Hello() {
 Hello()
 
 function App() {
-    debugger
+    console.log('App rendering')
+
     return (
         <div>
             <AppTitle/>
             <Rating/>
             <Accordion/>
+            <Rating/>
         </div>
     );
 }
@@ -25,7 +27,7 @@ function AppTitle() {
 }
 
 function Rating() {
-    debugger
+    console.log('Rating rendering')
     return (
         <div>
             <Star/>
@@ -38,20 +40,36 @@ function Rating() {
 }
 
 function Star() {
+    console.log('Star rendering')
     return (
         <div>star</div>
     )
 }
 
 function Accordion() {
-    debugger
+    console.log('Accordion rendering')
     return (
         <div>
-            <h3>Menu</h3>
+            <AccordionTitle/>
+            <AccordionBody/>
+        </div>
+    )
+}
+
+function AccordionTitle() {
+    return (
+        <h3>Menu</h3>
+    )
+}
+
+function AccordionBody() {
+    return (
+        <div>
             <li>1</li>
             <li>2</li>
             <li>3</li>
         </div>
+
     )
 }
 
