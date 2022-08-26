@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Accordion } from './components/Accordion/Accordion';
+import {Accordion} from './components/Accordion/Accordion';
+import {Rating} from "./components/Rating/Rating";
 
 function hello() {
     alert('Hello')
@@ -14,36 +15,16 @@ function App() {
     return (
         <div>
             <AppTitle/>
-            <Rating/>
+            <Rating value={3}/>
             <Accordion/>
-            <Rating/>
+            <Rating value={4}/>
         </div>
     );
 }
 
 function AppTitle() {
     return (
-        <>This is App component</>
-    )
-}
-
-function Rating() {
-    console.log('Rating rendering')
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
-
-function Star() {
-    console.log('Star rendering')
-    return (
-        <div>star</div>
+        <div>This is App component</div>
     )
 }
 
