@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import { Accordion } from './components/Accordion/Accordion';
 
-function Hello() {
+function hello() {
     alert('Hello')
 }
 
-Hello()
+hello()
 
 function App() {
     console.log('App rendering')
@@ -46,31 +47,8 @@ function Star() {
     )
 }
 
-function Accordion() {
-    console.log('Accordion rendering')
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </div>
-    )
-}
 
-function AccordionTitle() {
-    return (
-        <h3>Menu</h3>
-    )
-}
 
-function AccordionBody() {
-    return (
-        <div>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </div>
 
-    )
-}
 
 export default App;
