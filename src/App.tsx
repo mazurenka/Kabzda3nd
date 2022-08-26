@@ -17,7 +17,8 @@ function App() {
             <PageTitle title={"This is App component"}/>
             <PageTitle title={"Users"}/>
             <Rating value={3}/>
-            <Accordion/>
+            <Accordion title={"This is Accord component"}/>
+            <Accordion title={"This is W component"}/>
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
