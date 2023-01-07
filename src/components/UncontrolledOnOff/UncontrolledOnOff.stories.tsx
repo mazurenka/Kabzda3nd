@@ -9,13 +9,10 @@ export default {
 
 const callback = action("on or off clicked")
 
-export const OnMode = () => <UncontrolledOnOff />
-export const OffMode = () => <UncontrolledOnOff />
+export const OnMode = () => <UncontrolledOnOff defaultOn={true} onChange={callback}/>
+export const OffMode = () => <UncontrolledOnOff defaultOn={false} onChange={callback}/>
+export const DefInputValue = () => <input defaultValue={'yo'}/>
 
-export const OnOffModeChanging = () => {
-    const [value, setValue] = useState<boolean>(false)
-    return <UncontrolledOnOff />
-}
 
 
 
