@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useRef, useState} from "react";
 
 export default {
     title: "input",
@@ -17,14 +17,15 @@ export const TrackValueUncontrolledInput = () => {
 
 export const GetValueOfUncontrolledInputByButtonPress = () => {
     const [value, setValue] = useState("")
+    const inputRef = useRef<HTMLInputElement>(null)
+    const save = () => {
+        const el = inputRef.current as HTMLInputElement
+        setValue(el.value)
+    }
 
-    return <> <input id={"inputId"}/>
-        <button onClick={(e) => {
-            const el = document.getElementById("inputId") as HTMLInputElement
-            setValue(el.value)
-        }}>save
-        </button>
-         - actual value: {value} </>
+    return <> <input ref={inputRef} id={"inputId"}/>
+        <button onClick={save}>save</button>
+        - actual value: {value} </>
 }
 
 
