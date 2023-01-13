@@ -65,9 +65,7 @@ export const ControlledSelect = () => {
         <option value={"2"}>NewYork</option>
         <option value={"3"}>Sydney</option>
     </select>
-
 }
-
 
 export const ControlledInputWithFixedValue = () => <input value={"type here"}/>
 
