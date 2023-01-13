@@ -41,9 +41,11 @@ export const AccordionModeChanging = () => {
             {title: "Victor", value: 1},
             {title: "Valera", value: 2},
             {title: "James", value: 3},
-            {title: "Marta", value: 4}
+            {title: "Marta", value: 4},
         ]}
-        onClick={onClickCallback}
+        onClick={(value) => {
+            alert(`user with id ${value} should be happy`)
+        }}
     />
 }
 
